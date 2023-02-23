@@ -4,6 +4,7 @@ import { defineConfig } from 'vite';
 import vue from '@vitejs/plugin-vue';
 
 // Auto import APIs on-demand for Vite
+// Useage:https://github.com/antfu/unplugin-auto-import
 import AutoImport from 'unplugin-auto-import/vite';
 
 // https://vitejs.dev/config/
@@ -22,6 +23,7 @@ export default defineConfig({
         // presets
         'vue',
         'vue-router',
+        'pinia',
         // custom
         {
           '@vueuse/core': [
@@ -44,10 +46,9 @@ export default defineConfig({
       ],
       // 生成自动导入的TS声明文件
       dts: true,
+      // 兼容eslint
       eslintrc: {
-        enabled: true, // Default `false`
-        filepath: './.eslintrc-auto-import.json', // Default `./.eslintrc-auto-import.json`
-        globalsPropValue: true // Default `true`, (true | false | 'readonly' | 'readable' | 'writable' | 'writeable')
+        enabled: true // Default `false`
       }
     })
   ],
