@@ -7,6 +7,8 @@ import vue from '@vitejs/plugin-vue';
 // Useage:https://github.com/antfu/unplugin-auto-import
 import AutoImport from 'unplugin-auto-import/vite';
 
+import Components from 'unplugin-vue-components/vite';
+
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [
@@ -50,6 +52,27 @@ export default defineConfig({
       eslintrc: {
         enabled: true // Default `false`
       }
+    }),
+    Components({
+      /* options */
+      dts: true,
+      types: [
+        {
+          from: 'vue-router',
+          names: ['RouterLink', 'RouterView']
+        }
+      ],
+      // Allow subdirectories as namespace prefix for components.
+      directoryAsNamespace: false,
+
+      // Collapse same prefixes (camel-sensitive) of folders and components
+      // to prevent duplication inside namespaced component name.
+      // works when `directoryAsNamespace: true`
+      collapseSamePrefixes: false,
+
+      // Subdirectory paths for ignoring namespace prefixes.
+      // works when `directoryAsNamespace: true`
+      globalNamespaces: []
     })
   ],
   resolve: {
