@@ -9,8 +9,7 @@
     />
 
     <div class="wrapper">
-      <HelloWorld msg="You did it!" />
-
+      <HelloWorld msg="Project Demo" />
       <nav>
         <RouterLink to="/">Home</RouterLink>
         <RouterLink to="/about">About</RouterLink>

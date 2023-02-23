@@ -7,6 +7,8 @@ import vue from '@vitejs/plugin-vue';
 // Useage:https://github.com/antfu/unplugin-auto-import
 import AutoImport from 'unplugin-auto-import/vite';
 
+// On-demand components auto importing for Vue.
+// Useage:https://github.com/antfu/unplugin-vue-components
 import Components from 'unplugin-vue-components/vite';
 
 // https://vitejs.dev/config/
@@ -61,18 +63,7 @@ export default defineConfig({
           from: 'vue-router',
           names: ['RouterLink', 'RouterView']
         }
-      ],
-      // Allow subdirectories as namespace prefix for components.
-      directoryAsNamespace: false,
-
-      // Collapse same prefixes (camel-sensitive) of folders and components
-      // to prevent duplication inside namespaced component name.
-      // works when `directoryAsNamespace: true`
-      collapseSamePrefixes: false,
-
-      // Subdirectory paths for ignoring namespace prefixes.
-      // works when `directoryAsNamespace: true`
-      globalNamespaces: []
+      ]
     })
   ],
   resolve: {

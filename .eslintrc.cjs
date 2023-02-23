@@ -15,6 +15,9 @@ module.exports = {
     ecmaVersion: 'latest'
   },
   rules: {
-    'vue/multi-word-component-names': 'off'
+    'vue/multi-word-component-names': 'off', // 多字组件名称验证
+    eqeqeq: 2, //必须使用全等
+    'max-lines': ['error', 1000], //限制行数
+    complexity: ['error', 5] // 限制复杂度
   }
 };
