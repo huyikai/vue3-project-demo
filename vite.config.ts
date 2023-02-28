@@ -72,6 +72,7 @@ export default defineConfig(({ command, mode }: ConfigEnv) => {
       Components({
         /* options */
         dts: 'src/types/components.d.ts',
+        dirs: ['src/components', 'src/views'],
         types: [
           {
             from: 'vue-router',

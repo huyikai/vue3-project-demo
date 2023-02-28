@@ -1,8 +1,8 @@
 // mock/user.ts
 export default [
-  // 用户登录
+  // login
   {
-    url: '/api/user/login',
+    url: '/mock/user/login',
     method: 'post',
     response: () => {
       return {
