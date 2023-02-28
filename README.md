@@ -1,52 +1,30 @@
-# vue3-project-demo
+# Vue3-Project-Demo
 
-This template should help get you started developing with Vue 3 in Vite.
+### Features
 
-## Recommended IDE Setup
+- [Vue3](https://vuejs.org/) : (v3.2.47)
+- [Vite](https://vitejs.dev/) : generation frontend tooling 
+- [TypeScript](https://www.typescriptlang.org/) : Is a superset of JavaScript that compiles to clean JavaScript output. 
+- [Vue Router](https://router.vuejs.org/) : router.
+- [Pinia](https://pinia.vuejs.org/) : Intuitive, type safe and flexible Store for Vue. 
+- [Sass](https://sass-lang.com/) : Extension of CSS
+- [Vitest](https://github.com/vitest-dev/vitest) : Vite-native test framework 
+- [ESlint](https://eslint.org/) : Find and fix problems in your JavaScript code. 
+- [Prettier](https://prettier.io/) : code formatter.
+- [Unplugin-auto-import](https://github.com/antfu/unplugin-auto-import) : Auto import APIs on-demand for Vite. 
+- [Unplugin-vue-components](https://github.com/antfu/unplugin-vue-components) : On-demand components auto importing for Vue. 
+- [Husky](https://github.com/typicode/husky) : Git hooks. 
+- [Mockjs](https://github.com/nuysoft/Mock/wiki/Getting-Started) : A simulation data generator. 
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+### Usage
 
-## Type Support for `.vue` Imports in TS
+- ```sh
+  git clone https://github.com/huyikai/vue3-project-demo.git
+  ```
 
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin) to make the TypeScript language service aware of `.vue` types.
+- ```sh
+  npm run dev
+  ```
 
-If the standalone TypeScript plugin doesn't feel fast enough to you, Volar has also implemented a [Take Over Mode](https://github.com/johnsoncodehk/volar/discussions/471#discussioncomment-1361669) that is more performant. You can enable it by the following steps:
+  
 
-1. Disable the built-in TypeScript Extension
-    1) Run `Extensions: Show Built-in Extensions` from VSCode's command palette
-    2) Find `TypeScript and JavaScript Language Features`, right click and select `Disable (Workspace)`
-2. Reload the VSCode window by running `Developer: Reload Window` from the command palette.
-
-## Customize configuration
-
-See [Vite Configuration Reference](https://vitejs.dev/config/).
-
-## Project Setup
-
-```sh
-npm install
-```
-
-### Compile and Hot-Reload for Development
-
-```sh
-npm run dev
-```
-
-### Type-Check, Compile and Minify for Production
-
-```sh
-npm run build
-```
-
-### Run Unit Tests with [Vitest](https://vitest.dev/)
-
-```sh
-npm run test:unit
-```
-
-### Lint with [ESLint](https://eslint.org/)
-
-```sh
-npm run lint
-```
