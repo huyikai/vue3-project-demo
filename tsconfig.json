@@ -1,10 +1,10 @@
 {
   "compilerOptions": {
-    "baseUrl": ".", // 解析非相对模块的基础地址，默认是当前目录
+    "baseUrl": ".",
     "paths": {
       "@/*": [
-        "./src/*"
-      ] // 路径映射，相对于baseUrl
+        "src/*"
+      ]
     }
   },
   "references": [

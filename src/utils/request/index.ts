@@ -7,7 +7,7 @@ import type {
 } from 'axios';
 const service: AxiosInstance = axios.create({
   // baseURL: import.meta.env.VITE_APP_BASE_URL,
-  baseURL: '/api',
+  // baseURL: '/api',
   timeout: 30000
 });
 
@@ -24,14 +24,13 @@ service.interceptors.request.use(
 /* 响应拦截器 */
 service.interceptors.response.use(
   (response: AxiosResponse) => {
-    const { code, msg, message } = response.data;
+    const { code } = response.data;
     if (code === 200) {
       return response.data;
-    } else {
-      return Promise.reject(new Error(msg || message));
     }
   },
   (error: AxiosError) => {
+    console.log('error');
     return Promise.reject(error);
   }
 );
