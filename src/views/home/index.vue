@@ -43,6 +43,14 @@
           <a href="https://github.com/typicode/husky">Husky</a> : Git hooks.
         </li>
         <li>
+          <a href="https://github.com/okonet/lint-staged">Lint-staged</a> : Run
+          linters against staged git files.
+        </li>
+        <li>
+          <a href="https://axios-http.com/docs/intro">Axios</a>
+          : Promise based HTTP client for the browser and node.js
+        </li>
+        <li>
           <a href="https://github.com/nuysoft/Mock/wiki/Getting-Started"
             >Mockjs</a
           >
